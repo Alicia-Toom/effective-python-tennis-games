@@ -76,18 +76,17 @@ class TennisGame:
                 result = "Deuce"
             else:
                 result = f"{score_terms[player1_score]} - All"
+        elif player1_score >= 4 and (player1_score - player2_score == 1):
+            result = f"Advantage for {self.player1.name}"
+        elif player2_score >= 4 and (player2_score - player1_score == 1):
+            result = f"Advantage for {self.player2.name}"
+        elif player1_score >= 4 and (player1_score - player2_score >= 2):
+            result = f"Win for {self.player1.name}"
+        elif player2_score >= 4 and (player2_score - player1_score >= 2):
+            result = f"Win for {self.player2.name}"
+        # Handle case when non of players have won and continue playing
         else:
-            if player1_score >= 4 and (player1_score - player2_score == 1):
-                result = f"Advantage for {self.player1.name}"
-            elif player2_score >= 4 and (player2_score - player1_score == 1):
-                result = f"Advantage for {self.player2.name}"
-            if player1_score >= 4 and (player1_score - player2_score >= 2):
-                result = f"Win for {self.player1.name}"
-            elif player2_score >= 4 and (player2_score - player1_score >= 2):
-                result = f"Win for {self.player2.name}"
-            # Handle case when non of players have won and continue playing
-            else:
-                result = f"{score_terms[player1_score]} - {score_terms[player2_score]}"
+            result = f"{score_terms[player1_score]} - {score_terms[player2_score]}"
 
         return result
 
