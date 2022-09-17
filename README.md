@@ -13,17 +13,16 @@ We would like to do:
 
 3- Create "main" or "run" that you can dem the functions that exist, you can do simulation for 3-4 different moments during match, it works well with terminal no GUI needed!
 
-4- Create your own version of TennisGameklass, justify why you think it is better than the others. (50 points)
+4- Create your own version of TennisGameklass, justify why you think it is better than the others.
 
 ## 1. Commenting on files
 
 In the file tennis_original.py you will find the original files of the assignment. 
-I start commenting on files by first spliting the files into 2: tennis_game1.py and tennis_game2.py. There you will find a comment I have from what I have understood the code. 
-
+I start commenting on files by first spliting the files into 2: tennis_game1.py and tennis_game2.py. There you will find comments I have from what I have understood the code. Note that, it is only besic comment of the code and did not follow Google or Numpy style. 
 
 ## 2. Pylint score 
 
-In this section, you will find a comparion of pyline score of 4 files: 
+In this README section in the Appendix below, you will find copies comparion of pylint score of 4 files: 
 
 tennis_original (original): score 1.88/10
 tennis_game1 (after comment): score 3.87/10
@@ -32,7 +31,7 @@ tennis_refactor (after refactoring code): score 10/10
 
 ## 3. Creating main
 
-In each file, except the original file, you will find a main function to test the code in different moment
+In each file, except the original file (tennis_original.py), you will find a main function to test the code in different moment.
 
 ## 4. Refactoring code
 
@@ -42,14 +41,14 @@ In the file tennis_refactor you will find a new refactor code from both classes.
 
 **Variable names** : Both old classes used `p1` or `p2` score or player which make it confused whether the 'p' represent points or player. Intead, I used a full 'player' spelling for the variable and make everything follow the snake case. 
 
-**Simplified score calculation logic** : In the score function in both old classes, the score calculatiuon section is rather confusing and long and a lot of if, and elif statement. 
-I have used just one function with if, elif, and else to shorten the code and easier to understand. 
+**Simplified score calculation logic** : In the score function in both old classes, the score calculatiuon section is rather confusing and long and a lot of if, and elif statement. I have used just one function with if, elif, and else to shorten the code and easier to understand. 
 
 **Add type difinition to funcion arguments and return type** : The old code did not specify whether it is going to return None or Str, or int.
 
 **Add Player class, additional to TennisGame class** : In both old classes, they did not have Player class, so I have added it for be able to reuse and extend the class in the future. 
 
 **Thing that could be improved** : The represents a simplification of a tennis match since the code only supports a single game and does not cover the whole tennis match. In the future, in case of wanting to make the game more useful it might be worth considering having: 
+
     - Set class: where you calculate how many sets each player have won
     - Tirebreak class: when both players have equal games in a set (6-6) 
     - Add try and catch error incase of input a wrong type of data
