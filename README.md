@@ -6,9 +6,13 @@ Instruction:
 You work at a consulting company and one of your colleagues has worked for the Tennis Association. The contract is for 10 hours of work and your colleague has spent 8.5 hours on it. Unfortunately, he has now fallen ill. He says he has completed the work, and all tests pass. Your boss has asked you to take over for him. She wants you to spend an hour or so on the code so she can bill the client for the full 10 hours. She wants to tidy things up a bit and maybe make a better version. In the attached file you will find a couple of "Classes" that your colleague said do the same thing and one of them is a little better. 
 
 We would like to do: 
+
 1-Read the attached file and document and comment on what your colleague has already done.
+
 2-Show what pylint score you get for both classes.
+
 3- Create "main" or "run" that you can dem the functions that exist, you can do simulation for 3-4 different moments during match, it works well with terminal no GUI needed!
+
 4- Create your own version of TennisGameklass, justify why you think it is better than the others. (50 points)
 
 ## 1. Commenting on files
