@@ -1,6 +1,6 @@
 
 class TennisGame1:
- 
+
     def __init__(self, player1Name, player2Name):
         self.player1Name = player1Name
         self.player2Name = player2Name
@@ -145,3 +145,4 @@ class TennisGame2:
     
     def P2Score(self):
         self.p2points +=1
+        
