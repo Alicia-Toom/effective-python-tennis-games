@@ -111,3 +111,31 @@ class TennisGame2:
     def P2Score(self):
         """Increase the score by 1 point for player 2"""
         self.p2points +=1
+
+
+if __name__ == "__main__":
+    # Create new game between Alicia and Nadal
+    game = TennisGame2("Alicia", "Djokovic")
+
+    # Love all as a start
+    print(game.score())
+
+    # Fifteen - Love
+    game.won_point("Alicia")
+    print(game.score())
+
+    # Thirty - Love
+    game.won_point("Alicia")
+    print(game.score())
+
+    # Thirty - Fifteen
+    game.won_point("Djokovic")
+    print(game.score())
+
+    # Forty - Fifteen
+    game.won_point("Alicia")
+    print(game.score())
+
+    # Alicia Winner
+    game.won_point("Alicia")
+    print(game.score())
